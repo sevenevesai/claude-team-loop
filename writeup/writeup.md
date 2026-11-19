@@ -31,7 +31,7 @@ Most teams roll out Claude the same way: someone writes a few skills, shares the
 
 ## More than skills
 
-![From signal to upgrade](img/signals-to-upgrades.png)
+![From grumble to upgrade](img/signals-to-upgrades.png)
 
 A report is not a wish list for more skills. Every finding has a kind, and the kind says where it lands. An instruction repeated across projects becomes a working agreement. "Claude went ahead before I agreed" becomes a gate. Something that should happen by itself becomes a hook. Copying between two systems by hand points at a connector; an output several people rebuild points at a shared artifact, a template or a reusable service.
 
