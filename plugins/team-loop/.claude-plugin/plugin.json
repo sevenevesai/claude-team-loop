@@ -1,0 +1,9 @@
+{
+  "name": "team-loop",
+  "version": "0.1.0",
+  "description": "How the team works with Claude on any project: catching up on a project, closing out with the records updated, writing updates for customers, stakeholders and colleagues, setting up project context, adapting a skill to a project, and finding skill ideas in your own Claude history for the maintainers.",
+  "author": {
+    "name": "Your team"
+  },
+  "keywords": ["teamwork", "context", "changelog", "handoff"]
+}

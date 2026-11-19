@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <title>From signal to upgrade</title>
+  <desc>Eight rows. Each maps something a person's Claude history shows to a kind of finding and to what it becomes: new skill, skill change, working agreement, gate, hook, integration or shared resource.</desc>
+  <rect width="1600" height="1000" fill="#FBF8F3"/>
+
+  <text x="70" y="92" font-size="44" font-weight="700" fill="#211D18">From signal to upgrade</text>
+  <text x="70" y="132" font-size="22" fill="#6B6259">Each recurring pattern in someone's history has a place it belongs. Skills are only the first three.</text>
+
+  <g font-size="15" font-weight="600" letter-spacing="3" fill="#6B6259">
+    <text x="150" y="196">WHAT THE HISTORY SHOWS</text>
+    <text x="822" y="196" text-anchor="middle">KIND OF FINDING</text>
+    <text x="1000" y="196">WHAT IT BECOMES</text>
+  </g>
+
+  <defs>
+    <g id="row">
+      <rect x="130" y="0" width="1400" height="74" rx="14" fill="#FFFFFF" stroke="#E7DED2"/>
+      <path d="M 690 37 H 706" stroke="#B9AEA1" stroke-width="2"/>
+      <path d="M 938 37 H 968" stroke="#B9AEA1" stroke-width="2"/>
+      <path d="M 968 31 L 978 37 L 968 43 Z" fill="#B9AEA1"/>
+    </g>
+  </defs>
+
+  <!-- group rails -->
+  <g font-size="15" font-weight="700" letter-spacing="2">
+    <rect x="70" y="216" width="8" height="250" rx="4" fill="#C4532F"/>
+    <text transform="translate(108,341) rotate(-90)" text-anchor="middle" fill="#C4532F">BETTER SKILLS</text>
+    <rect x="70" y="474" width="8" height="250" rx="4" fill="#1F7A75"/>
+    <text transform="translate(108,599) rotate(-90)" text-anchor="middle" fill="#1F7A75">BETTER GUARDRAILS</text>
+    <rect x="70" y="732" width="8" height="162" rx="4" fill="#D99A2B"/>
+    <text transform="translate(108,813) rotate(-90)" text-anchor="middle" fill="#A9741A">BEYOND</text>
+  </g>
+
+  <g font-size="19" fill="#211D18">
+    <g transform="translate(0,216)"><use href="#row"/>
+      <text x="154" y="44">The same task in three or more sessions, and no skill covers it</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">new skill</text>
+      <text x="1000" y="44" font-weight="600">A new skill, in the plugin whose audience fits</text></g>
+    <g transform="translate(0,304)"><use href="#row"/>
+      <text x="154" y="44">A skill ran, and the person corrected or worked around it</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">skill change</text>
+      <text x="1000" y="44" font-weight="600">Reworded steps in that skill</text></g>
+    <g transform="translate(0,392)"><use href="#row"/>
+      <text x="154" y="44">A skill exists, never fired, and the task was done by hand</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">skill change</text>
+      <text x="1000" y="44" font-weight="600">A description that triggers on people's own words</text></g>
+
+    <g transform="translate(0,474)"><use href="#row"/>
+      <text x="154" y="44">The same instruction, given again across projects</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">working agreement</text>
+      <text x="1000" y="44" font-weight="600">A line every session starts with</text></g>
+    <g transform="translate(0,562)"><use href="#row"/>
+      <text x="154" y="44">Claude acted before the person had agreed</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">gate</text>
+      <text x="1000" y="44" font-weight="600">A stop that no local override can waive</text></g>
+    <g transform="translate(0,650)"><use href="#row"/>
+      <text x="154" y="44">Something should happen by itself at a fixed moment</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">hook</text>
+      <text x="1000" y="44" font-weight="600">Automation at session start or on a tool call</text></g>
+
+    <g transform="translate(0,732)"><use href="#row"/>
+      <text x="154" y="44">Information is moved between systems by hand</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#D99A2B"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#211D18">integration</text>
+      <text x="1000" y="44" font-weight="600">A connector or MCP server</text></g>
+    <g transform="translate(0,820)"><use href="#row"/>
+      <text x="154" y="44">An output several people rebuild or pass around</text>
+      <rect x="712" y="19" width="220" height="36" rx="18" fill="#D99A2B"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#211D18">shared resource</text>
+      <text x="1000" y="44" font-weight="600">A shared artifact, project template or service</text></g>
+  </g>
+
+  <text x="130" y="948" font-size="17" fill="#6B6259">A finding needs three sessions behind it, or a recorded override. The owner decides what ships.</text>
+</svg>

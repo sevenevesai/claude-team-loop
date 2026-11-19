@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
+  <title>What stays, what travels, what comes back</title>
+  <desc>Three zones. On each person's machine: session history, project records and local overrides, which stay. Through an approval gate, a findings report of counts and task descriptions travels to a shared sheet. The owner's repository holds the backlog and plugin source. Status on every row and a new plugin version come back.</desc>
+  <rect width="1600" height="900" fill="#FBF8F3"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#211D18"/></marker>
+    <marker id="aht" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#1F7A75"/></marker>
+  </defs>
+
+  <text x="70" y="92" font-size="44" font-weight="700" fill="#211D18">What stays, what travels, what comes back</text>
+  <text x="70" y="132" font-size="22" fill="#6B6259">The owner never sees a transcript. Each person's own Claude reads their history and sends only the pattern.</text>
+
+  <!-- zone 1 -->
+  <rect x="70" y="190" width="440" height="520" rx="20" fill="#F1EAE0"/>
+  <text x="102" y="238" font-size="15" font-weight="600" letter-spacing="3" fill="#C4532F">EACH PERSON'S MACHINE</text>
+  <text x="102" y="272" font-size="24" font-weight="700" fill="#211D18">Stays here</text>
+  <g font-size="19" fill="#211D18">
+    <g transform="translate(102,306)"><rect width="376" height="84" rx="12" fill="#FFFFFF" stroke="#E7DED2"/>
+      <text x="20" y="34" font-weight="600">Session history</text><text x="20" y="62" font-size="16" fill="#6B6259">every prompt, correction and file touched</text></g>
+    <g transform="translate(102,402)"><rect width="376" height="84" rx="12" fill="#FFFFFF" stroke="#E7DED2"/>
+      <text x="20" y="34" font-weight="600">Project records</text><text x="20" y="62" font-size="16" fill="#6B6259">context file, change record, wins</text></g>
+    <g transform="translate(102,498)"><rect width="376" height="84" rx="12" fill="#FFFFFF" stroke="#E7DED2"/>
+      <text x="20" y="34" font-weight="600">Local overrides</text><text x="20" y="62" font-size="16" fill="#6B6259">"on this project we do it differently"</text></g>
+  </g>
+  <text font-size="16" fill="#6B6259"><tspan x="102" y="626">Only that person's own Claude reads it,</tspan><tspan x="102" y="650">with the skill the plugin ships.</tspan></text>
+
+  <!-- gate -->
+  <path d="M 510 400 H 596" stroke="#211D18" stroke-width="3" marker-end="url(#ah)"/>
+  <g transform="translate(618,400)">
+    <path d="M 0 -64 L 64 0 L 0 64 L -64 0 Z" transform="translate(64,0)" fill="#211D18"/>
+    <text x="64" y="-6" text-anchor="middle" font-size="17" font-weight="700" fill="#FBF8F3">Person</text>
+    <text x="64" y="16" text-anchor="middle" font-size="17" font-weight="700" fill="#FBF8F3">approves</text>
+  </g>
+  <path d="M 746 400 H 806" stroke="#211D18" stroke-width="3" marker-end="url(#ah)"/>
+  <text x="682" y="498" text-anchor="middle" font-size="16" fill="#6B6259">nothing leaves</text>
+  <text x="682" y="520" text-anchor="middle" font-size="16" fill="#6B6259">before this</text>
+
+  <!-- zone 2 -->
+  <rect x="820" y="190" width="400" height="520" rx="20" fill="#F1EAE0"/>
+  <text x="852" y="238" font-size="15" font-weight="600" letter-spacing="3" fill="#A9741A">SHARED SHEET</text>
+  <text x="852" y="272" font-size="24" font-weight="700" fill="#211D18">Travels</text>
+  <g transform="translate(852,306)">
+    <rect width="336" height="276" rx="12" fill="#FFFFFF" stroke="#E7DED2"/>
+    <rect width="336" height="40" rx="12" fill="#211D18"/><rect y="20" width="336" height="20" fill="#211D18"/>
+    <g font-size="14" font-weight="600" fill="#FBF8F3"><text x="16" y="26">Kind</text><text x="128" y="26">Evidence</text><text x="250" y="26">Status</text></g>
+    <g font-size="15" fill="#211D18">
+      <text x="16" y="70">skill change</text><text x="128" y="70">14 sessions</text><text x="250" y="70" fill="#1F7A75" font-weight="600">shipped</text>
+      <path d="M 0 88 H 336" stroke="#E7DED2"/>
+      <text x="16" y="116">new skill</text><text x="128" y="116">9 sessions</text><text x="250" y="116" fill="#1F7A75" font-weight="600">accepted</text>
+      <path d="M 0 134 H 336" stroke="#E7DED2"/>
+      <text x="16" y="162">gate</text><text x="128" y="162">4 sessions</text><text x="250" y="162" fill="#1F7A75" font-weight="600">shipped</text>
+      <path d="M 0 180 H 336" stroke="#E7DED2"/>
+      <text x="16" y="208">integration</text><text x="128" y="208">6 sessions</text><text x="250" y="208" fill="#6B6259">declined</text>
+      <path d="M 0 226 H 336" stroke="#E7DED2"/>
+      <text x="16" y="254">hook</text><text x="128" y="254">3 sessions</text><text x="250" y="254" fill="#C4532F" font-weight="600">new</text>
+    </g>
+  </g>
+  <text font-size="16" fill="#6B6259"><tspan x="852" y="626">Counts, task-level descriptions, a proposal.</tspan><tspan x="852" y="650">No names, no records, no copied text.</tspan></text>
+
+  <!-- zone 3 -->
+  <path d="M 1220 400 H 1276" stroke="#211D18" stroke-width="3" marker-end="url(#ah)"/>
+  <rect x="1290" y="190" width="240" height="520" rx="20" fill="#211D18"/>
+  <text x="1318" y="238" font-size="15" font-weight="600" letter-spacing="3" fill="#7FC6C1">THE OWNER'S REPO</text>
+  <text x="1318" y="272" font-size="24" font-weight="700" fill="#FBF8F3">Decides</text>
+  <g font-size="18" font-weight="600" fill="#211D18" text-anchor="middle">
+    <g transform="translate(1318,306)"><rect width="184" height="62" rx="12" fill="#FBF8F3"/><text x="92" y="38">Nightly review</text></g>
+    <g transform="translate(1318,400)"><rect width="184" height="62" rx="12" fill="#FBF8F3"/><text x="92" y="38">Backlog</text></g>
+    <g transform="translate(1318,494)"><rect width="184" height="62" rx="12" fill="#FBF8F3"/><text x="92" y="38">Plugin source</text></g>
+    <g transform="translate(1318,588)"><rect width="184" height="62" rx="12" fill="#D99A2B"/><text x="92" y="38">Release</text></g>
+  </g>
+  <g stroke="#FBF8F3" stroke-width="2"><path d="M 1410 368 V 400"/><path d="M 1410 462 V 494"/><path d="M 1410 556 V 588"/></g>
+
+  <!-- return path -->
+  <path d="M 1410 710 V 790 H 290 V 722" fill="none" stroke="#1F7A75" stroke-width="4" marker-end="url(#aht)"/>
+  <path d="M 1020 790 V 722" fill="none" stroke="#1F7A75" stroke-width="4" marker-end="url(#aht)"/>
+  <rect x="1050" y="772" width="330" height="36" rx="18" fill="#FBF8F3"/>
+  <text x="1215" y="796" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A75">a status on every row</text>
+  <rect x="440" y="772" width="420" height="36" rx="18" fill="#FBF8F3"/>
+  <text x="650" y="796" text-anchor="middle" font-size="17" font-weight="700" fill="#1F7A75">a new plugin version in the next session</text>
+  <text x="70" y="856" font-size="17" fill="#6B6259">Comes back: people see what became of each proposal, and the fix shows up in their own work.</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "description": "Adds the team's working agreements to each session in Claude Code and Cowork. Chat ignores hooks; the skills carry what they need themselves.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT}/context/working-agreements.md\""
+          }
+        ]
+      }
+    ]
+  }
+}

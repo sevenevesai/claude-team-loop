@@ -1,0 +1,17 @@
+{
+  "name": "team-loop-kit",
+  "owner": {
+    "name": "Your team"
+  },
+  "metadata": {
+    "description": "Skills and working agreements a team shares across Claude chat, Cowork and Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "team-loop",
+      "source": "./plugins/team-loop",
+      "description": "How the team works with Claude on any project: catching up, closing out, updates for any reader, project context, adapting skills to a project, finding skill ideas in your own history.",
+      "category": "productivity"
+    }
+  ]
+}

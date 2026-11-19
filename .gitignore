@@ -1,0 +1,11 @@
+# Build output from tools/package-plugins.py
+dist/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
