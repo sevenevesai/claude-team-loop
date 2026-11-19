@@ -82,7 +82,7 @@ person does not have, and a new plugin needs no change to the skill.
 
 ### A finding has a kind, and the kind says where it lands
 
-![From signal to upgrade: eight signals, the kind of finding each becomes, and where it lands](../writeup/img/signals-to-upgrades.png)
+![Eight sticky notes with things people say while working, each stamped with the upgrade it becomes](../writeup/img/signals-to-upgrades.png)
 
 New skill, skill change, not installed, working agreement, gate, hook, integration, shared
 resource, other. The last three point outside the plugin: at a connector, a shared artifact, a

@@ -81,7 +81,7 @@ into task types and counts, and writes a report with no names, ids or copied tex
 reads it and approves it, and only then does it reach the shared sheet. The owner's review
 answers every row with a status, so people see what became of what they sent.
 
-![Eight signals in a person's history, the kind of finding each becomes, and where it lands](writeup/img/signals-to-upgrades.png)
+![Eight sticky notes with things people say while working, each stamped with the upgrade it becomes](writeup/img/signals-to-upgrades.png)
 
 A finding has a kind, and the kind says where it lands. Three kinds improve skills. Three
 tighten guardrails: working agreements, gates, hooks. Two point beyond the plugin, at a

@@ -1,72 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif">
-  <title>From signal to upgrade</title>
-  <desc>Eight rows. Each maps something a person's Claude history shows to a kind of finding and to what it becomes: new skill, skill change, working agreement, gate, hook, integration or shared resource.</desc>
-  <rect width="1600" height="1000" fill="#FBF8F3"/>
-
-  <text x="70" y="92" font-size="44" font-weight="700" fill="#211D18">From signal to upgrade</text>
-  <text x="70" y="132" font-size="22" fill="#6B6259">Each recurring pattern in someone's history has a place it belongs. Skills are only the first three.</text>
-
-  <g font-size="15" font-weight="600" letter-spacing="3" fill="#6B6259">
-    <text x="150" y="196">WHAT THE HISTORY SHOWS</text>
-    <text x="822" y="196" text-anchor="middle">KIND OF FINDING</text>
-    <text x="1000" y="196">WHAT IT BECOMES</text>
-  </g>
-
-  <defs>
-    <g id="row">
-      <rect x="130" y="0" width="1400" height="74" rx="14" fill="#FFFFFF" stroke="#E7DED2"/>
-      <path d="M 690 37 H 706" stroke="#B9AEA1" stroke-width="2"/>
-      <path d="M 938 37 H 968" stroke="#B9AEA1" stroke-width="2"/>
-      <path d="M 968 31 L 978 37 L 968 43 Z" fill="#B9AEA1"/>
-    </g>
-  </defs>
-
-  <!-- group rails -->
-  <g font-size="15" font-weight="700" letter-spacing="2">
-    <rect x="70" y="216" width="8" height="250" rx="4" fill="#C4532F"/>
-    <text transform="translate(108,341) rotate(-90)" text-anchor="middle" fill="#C4532F">BETTER SKILLS</text>
-    <rect x="70" y="474" width="8" height="250" rx="4" fill="#1F7A75"/>
-    <text transform="translate(108,599) rotate(-90)" text-anchor="middle" fill="#1F7A75">BETTER GUARDRAILS</text>
-    <rect x="70" y="732" width="8" height="162" rx="4" fill="#D99A2B"/>
-    <text transform="translate(108,813) rotate(-90)" text-anchor="middle" fill="#A9741A">BEYOND</text>
-  </g>
-
-  <g font-size="19" fill="#211D18">
-    <g transform="translate(0,216)"><use href="#row"/>
-      <text x="154" y="44">The same task in three or more sessions, and no skill covers it</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">new skill</text>
-      <text x="1000" y="44" font-weight="600">A new skill, in the plugin whose audience fits</text></g>
-    <g transform="translate(0,304)"><use href="#row"/>
-      <text x="154" y="44">A skill ran, and the person corrected or worked around it</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">skill change</text>
-      <text x="1000" y="44" font-weight="600">Reworded steps in that skill</text></g>
-    <g transform="translate(0,392)"><use href="#row"/>
-      <text x="154" y="44">A skill exists, never fired, and the task was done by hand</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#C4532F"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">skill change</text>
-      <text x="1000" y="44" font-weight="600">A description that triggers on people's own words</text></g>
-
-    <g transform="translate(0,474)"><use href="#row"/>
-      <text x="154" y="44">The same instruction, given again across projects</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">working agreement</text>
-      <text x="1000" y="44" font-weight="600">A line every session starts with</text></g>
-    <g transform="translate(0,562)"><use href="#row"/>
-      <text x="154" y="44">Claude acted before the person had agreed</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">gate</text>
-      <text x="1000" y="44" font-weight="600">A stop that no local override can waive</text></g>
-    <g transform="translate(0,650)"><use href="#row"/>
-      <text x="154" y="44">Something should happen by itself at a fixed moment</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#1F7A75"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">hook</text>
-      <text x="1000" y="44" font-weight="600">Automation at session start or on a tool call</text></g>
-
-    <g transform="translate(0,732)"><use href="#row"/>
-      <text x="154" y="44">Information is moved between systems by hand</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#D99A2B"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#211D18">integration</text>
-      <text x="1000" y="44" font-weight="600">A connector or MCP server</text></g>
-    <g transform="translate(0,820)"><use href="#row"/>
-      <text x="154" y="44">An output several people rebuild or pass around</text>
-      <rect x="712" y="19" width="220" height="36" rx="18" fill="#D99A2B"/><text x="822" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#211D18">shared resource</text>
-      <text x="1000" y="44" font-weight="600">A shared artifact, project template or service</text></g>
-  </g>
-
-  <text x="130" y="948" font-size="17" fill="#6B6259">A finding needs three sessions behind it, or a recorded override. The owner decides what ships.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Ink Free','Segoe Print','Bradley Hand','Comic Neue',cursive">
+<title>From grumble to upgrade</title>
+<desc>Eight sticky notes with things people say while working, each stamped with what it becomes: new skill, skill fix, better trigger, working agreement, gate, hook, integration, shared resource.</desc>
+<defs>
+  <filter id="w1" filterUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+  </filter>
+  <filter id="w2" filterUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000">
+    <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="9"/>
+  </filter>
+  <filter id="rough" filterUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="5" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="8"/>
+    <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.2  0 0 0 0.09 0"/>
+  </filter>
+</defs>
+<rect width="1600" height="1000" fill="#f7f0e1"/>
+<rect width="1600" height="1000" filter="url(#grain)"/>
+<rect x="66" y="62" width="640" height="34" rx="6" fill="#f9c6d0" opacity="0.75" filter="url(#w1)" transform="rotate(-1 66 62)"/>
+<text x="70" y="92" font-size="58" text-anchor="start" fill="#2a2420" font-weight="700" >from grumble to upgrade</text>
+<text x="72" y="140" font-size="27" text-anchor="start" fill="#6f6457" font-weight="400" >what people mutter at their screens, and what each one turns into.</text>
+<g transform="rotate(-3 220 265)"><rect x="76" y="188" width="300" height="170" fill="#000" opacity="0.13"/><rect x="70" y="180" width="300" height="170" fill="#ffe680"/><rect x="175" y="166" width="90" height="28" fill="#fff" opacity="0.55"/><text x="92" y="236" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >I've done this by</text><text x="92" y="274" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >hand five times</text><text x="92" y="312" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >this month.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 220 364 q -8 18 0 36"/><path d="M 220 400 L 213 386"/><path d="M 220 400 L 227 386"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 220 364 q -8 18 0 36"/><path d="M 220 400 L 213 386"/><path d="M 220 400 L 227 386"/></g>
+<g filter="url(#rough)" transform="rotate(2.4000000000000004 220 443)"><rect x="115.5" y="416" width="209" height="54" rx="9" fill="none" stroke="#c4452d" stroke-width="4"/><text x="220" y="453" text-anchor="middle" font-size="27" font-weight="700" fill="#c4452d" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">NEW SKILL</text></g>
+<text x="220" y="504" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >a new skill gets written</text>
+<g transform="rotate(2 607 265)"><rect x="463" y="188" width="300" height="170" fill="#000" opacity="0.13"/><rect x="457" y="180" width="300" height="170" fill="#ffe680"/><rect x="562" y="166" width="90" height="28" fill="#fff" opacity="0.55"/><text x="479" y="236" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >the skill ran, but</text><text x="479" y="274" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >I had to fix its</text><text x="479" y="312" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >output. again.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 607 364 q 8 18 0 36"/><path d="M 607 400 L 600 386"/><path d="M 607 400 L 614 386"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 607 364 q 8 18 0 36"/><path d="M 607 400 L 600 386"/><path d="M 607 400 L 614 386"/></g>
+<g filter="url(#rough)" transform="rotate(-1.6 607 443)"><rect x="502.5" y="416" width="209" height="54" rx="9" fill="none" stroke="#c4452d" stroke-width="4"/><text x="607" y="453" text-anchor="middle" font-size="27" font-weight="700" fill="#c4452d" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">SKILL FIX</text></g>
+<text x="607" y="504" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >its steps get reworded</text>
+<g transform="rotate(-1.5 994 265)"><rect x="850" y="188" width="300" height="170" fill="#000" opacity="0.13"/><rect x="844" y="180" width="300" height="170" fill="#ffd9a0"/><rect x="949" y="166" width="90" height="28" fill="#fff" opacity="0.55"/><text x="866" y="236" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >wait, there's a</text><text x="866" y="274" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >skill for this? it</text><text x="866" y="312" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >never kicked in.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 994 364 q -8 18 0 36"/><path d="M 994 400 L 987 386"/><path d="M 994 400 L 1001 386"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 994 364 q -8 18 0 36"/><path d="M 994 400 L 987 386"/><path d="M 994 400 L 1001 386"/></g>
+<g filter="url(#rough)" transform="rotate(1.2000000000000002 994 443)"><rect x="847.0" y="416" width="294" height="54" rx="9" fill="none" stroke="#c4452d" stroke-width="4"/><text x="994" y="453" text-anchor="middle" font-size="27" font-weight="700" fill="#c4452d" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">BETTER TRIGGER</text></g>
+<text x="994" y="504" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >its description learns your words</text>
+<g transform="rotate(3 1381 265)"><rect x="1237" y="188" width="300" height="170" fill="#000" opacity="0.13"/><rect x="1231" y="180" width="300" height="170" fill="#bfe3f2"/><rect x="1336" y="166" width="90" height="28" fill="#fff" opacity="0.55"/><text x="1253" y="236" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >I type this same</text><text x="1253" y="274" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >instruction in</text><text x="1253" y="312" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >every project.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 1381 364 q 8 18 0 36"/><path d="M 1381 400 L 1374 386"/><path d="M 1381 400 L 1388 386"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 1381 364 q 8 18 0 36"/><path d="M 1381 400 L 1374 386"/><path d="M 1381 400 L 1388 386"/></g>
+<g filter="url(#rough)" transform="rotate(-2.4000000000000004 1381 443)"><rect x="1208.5" y="416" width="345" height="54" rx="9" fill="none" stroke="#1d7a70" stroke-width="4"/><text x="1381" y="453" text-anchor="middle" font-size="27" font-weight="700" fill="#1d7a70" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">WORKING AGREEMENT</text></g>
+<text x="1381" y="504" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >a rule every session starts with</text>
+<g transform="rotate(2.5 220 633)"><rect x="76" y="556" width="300" height="170" fill="#000" opacity="0.13"/><rect x="70" y="548" width="300" height="170" fill="#bfe3f2"/><rect x="175" y="534" width="90" height="28" fill="#fff" opacity="0.55"/><text x="92" y="604" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >whoa. I hadn't</text><text x="92" y="642" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >said yes to</text><text x="92" y="680" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >that yet.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 220 732 q -8 18 0 36"/><path d="M 220 768 L 213 754"/><path d="M 220 768 L 227 754"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 220 732 q -8 18 0 36"/><path d="M 220 768 L 213 754"/><path d="M 220 768 L 227 754"/></g>
+<g filter="url(#rough)" transform="rotate(-2.0 220 811)"><rect x="158.0" y="784" width="124" height="54" rx="9" fill="none" stroke="#1d7a70" stroke-width="4"/><text x="220" y="821" text-anchor="middle" font-size="27" font-weight="700" fill="#1d7a70" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">GATE</text></g>
+<text x="220" y="872" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >a stop nobody can switch off</text>
+<g transform="rotate(-2 607 633)"><rect x="463" y="556" width="300" height="170" fill="#000" opacity="0.13"/><rect x="457" y="548" width="300" height="170" fill="#cdeac0"/><rect x="562" y="534" width="90" height="28" fill="#fff" opacity="0.55"/><text x="479" y="604" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >this should just</text><text x="479" y="642" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >happen by itself</text><text x="479" y="680" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >when I start.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 607 732 q 8 18 0 36"/><path d="M 607 768 L 600 754"/><path d="M 607 768 L 614 754"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 607 732 q 8 18 0 36"/><path d="M 607 768 L 600 754"/><path d="M 607 768 L 614 754"/></g>
+<g filter="url(#rough)" transform="rotate(1.6 607 811)"><rect x="545.0" y="784" width="124" height="54" rx="9" fill="none" stroke="#1d7a70" stroke-width="4"/><text x="607" y="821" text-anchor="middle" font-size="27" font-weight="700" fill="#1d7a70" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">HOOK</text></g>
+<text x="607" y="872" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >automation, no asking needed</text>
+<g transform="rotate(1.5 994 633)"><rect x="850" y="556" width="300" height="170" fill="#000" opacity="0.13"/><rect x="844" y="548" width="300" height="170" fill="#f9c6d0"/><rect x="949" y="534" width="90" height="28" fill="#fff" opacity="0.55"/><text x="866" y="604" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >copy from here,</text><text x="866" y="642" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >paste over there.</text><text x="866" y="680" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >every. single. day.</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 994 732 q -8 18 0 36"/><path d="M 994 768 L 987 754"/><path d="M 994 768 L 1001 754"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 994 732 q -8 18 0 36"/><path d="M 994 768 L 987 754"/><path d="M 994 768 L 1001 754"/></g>
+<g filter="url(#rough)" transform="rotate(-1.2000000000000002 994 811)"><rect x="872.5" y="784" width="243" height="54" rx="9" fill="none" stroke="#6b4fa0" stroke-width="4"/><text x="994" y="821" text-anchor="middle" font-size="27" font-weight="700" fill="#6b4fa0" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">INTEGRATION</text></g>
+<text x="994" y="872" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >a connector does the carrying</text>
+<g transform="rotate(-3 1381 633)"><rect x="1237" y="556" width="300" height="170" fill="#000" opacity="0.13"/><rect x="1231" y="548" width="300" height="170" fill="#f9c6d0"/><rect x="1336" y="534" width="90" height="28" fill="#fff" opacity="0.55"/><text x="1253" y="604" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >can you send me</text><text x="1253" y="642" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >your version of</text><text x="1253" y="680" font-size="30" text-anchor="start" fill="#2a2420" font-weight="700" >that doc?</text></g>
+<g filter="url(#w1)" stroke="#2a2420" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 1381 732 q 8 18 0 36"/><path d="M 1381 768 L 1374 754"/><path d="M 1381 768 L 1388 754"/></g><g filter="url(#w2)" stroke="#2a2420" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"><path d="M 1381 732 q 8 18 0 36"/><path d="M 1381 768 L 1374 754"/><path d="M 1381 768 L 1388 754"/></g>
+<g filter="url(#rough)" transform="rotate(2.4000000000000004 1381 811)"><rect x="1225.5" y="784" width="311" height="54" rx="9" fill="none" stroke="#6b4fa0" stroke-width="4"/><text x="1381" y="821" text-anchor="middle" font-size="27" font-weight="700" fill="#6b4fa0" font-family="'Segoe UI',Arial,sans-serif" letter-spacing="2">SHARED RESOURCE</text></g>
+<text x="1381" y="872" font-size="24" text-anchor="middle" fill="#6f6457" font-weight="400" >one shared artifact or template</text>
+<text x="70" y="962" font-size="24" text-anchor="start" fill="#6f6457" font-weight="400" >three sessions of evidence, or it stays a hunch. the owner decides what ships.</text>
+<text x="1530" y="962" font-size="20" text-anchor="end" fill="#6f6457" font-weight="400" >red: better skills · green: better guardrails · purple: beyond the plugin</text>
 </svg>
